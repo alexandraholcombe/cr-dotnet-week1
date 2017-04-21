@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -78,6 +78,14 @@ div.col-md-6 {
     height: 100%;
 }
 
+.pane-1 div.col-md-6:first-of-type, .pane-2 div.col-md-6:last-of-type {
+    padding: 20px;
+}
+
+.pane-1 div.col-md-6:first-of-type {
+    padding-top: 50px;
+}
+
 .pane-2 img, .pane-1 img {
     width: auto;
     height: 100%;
@@ -95,12 +103,44 @@ div.col-md-6 {
     -ms-filter: "FlipH";
 }
 
-.pane-2 img {
-    float: right;
-}
-
 .jumbotron {
     margin: 0;
+}
+
+.btn-default {
+    background-color: #b5190b;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 52px;
+    padding: 0 50px;
+    border: 0px solid transparent;
+    position: relative;
+    bottom: 0;
+}
+
+.btn-default:hover {
+    background-color: #f1d500;
+}
+
+.pane-1 h2, .pane-2 h2 {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 19px;
+}
+
+.pane-2 h2 {
+    margin-bottom: 10px;
+}
+
+.pane-1 p, .pane-2 p {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 48px;
 }
 
 
