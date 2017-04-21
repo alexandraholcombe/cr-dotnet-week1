@@ -1,4 +1,17 @@
-﻿@{
-    ViewData["Title"] = "Isabella Bird Blog - People";
+﻿@model GummiBearKingdom.Models.Product
+
+@{
+    ViewData["Title"] = "GummiBear Kingdom - Product";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<h2>@Html.DisplayFor(model => model.Name)</h2>
+<p><span class="country">@Html.DisplayFor(model => model.CountryOfOrigin)</span></p>
+<p><span class="price">@Html.DisplayFor(model => model.Cost)</span></p>
+
+<div class="admin">
+    <p>@Html.ActionLink("Edit Product", "Edit", new { id = Model.ProductId })</p>
+    <p>@Html.ActionLink("Delete Product", "Delete", new { id = Model.ProductId })</p>
+</div>
+
+@Html.ActionLink("Back to products", "Index")
