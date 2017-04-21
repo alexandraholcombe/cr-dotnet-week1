@@ -41,6 +41,15 @@ nav.navbar a {
     color: white;
 }
 
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent;
+    color: #f1d500;
+}
+
+.nav {
+    margin-left: -10px;
+}
+
 
 /*HOME PAGE*/
 
