@@ -21,7 +21,7 @@ namespace GummiBearKingdom.Migrations
                     b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("Cost");
+                    b.Property<decimal>("Cost");
 
                     b.Property<string>("CountryOfOrigin");
 

@@ -11,7 +11,7 @@ namespace GummiBearKingdom.Models
         [Key]
         public int ProductId { get; set; }
         public string Name { get; set; }
-        public int Cost { get; set; }
+        public decimal Cost { get; set; }
         public string CountryOfOrigin { get; set; }
     }
 }

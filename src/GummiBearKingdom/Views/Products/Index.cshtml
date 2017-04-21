@@ -1,4 +1,19 @@
-﻿@{
+﻿@model GummiBearKingdom.Models.Product
+
+@{
     ViewData["Title"] = "Isabella Bird Blog - People";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<h1>Products</h1>
+
+<div class="product-container">
+    @foreach (var product in Model)
+    {
+        <div class="product">
+            <h3>@Html.ActionLink((string) product.Name, "Details", new { id = product.ProductId })</h3>
+            <p><span class="country">@product.CountryOfOrigin</span></p>
+            <p><span class="price">@product.Cost</span></p>
+        </div>
+    }
+</div>

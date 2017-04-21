@@ -199,8 +199,8 @@ C:\Users\epicodus\Desktop\cr-dotnet-week1\src\GummiBearKingdom\Program.cs
 C:\Users\epicodus\Desktop\cr-dotnet-week1\src\GummiBearKingdom\Startup.cs
 C:\Users\epicodus\Desktop\cr-dotnet-week1\src\GummiBearKingdom\Controllers\HomeController.cs
 C:\Users\epicodus\Desktop\cr-dotnet-week1\src\GummiBearKingdom\Controllers\ProductsController.cs
-C:\Users\epicodus\Desktop\cr-dotnet-week1\src\GummiBearKingdom\Migrations\20170421180444_Initial.cs
-C:\Users\epicodus\Desktop\cr-dotnet-week1\src\GummiBearKingdom\Migrations\20170421180444_Initial.Designer.cs
+C:\Users\epicodus\Desktop\cr-dotnet-week1\src\GummiBearKingdom\Migrations\20170421203224_Initial.cs
+C:\Users\epicodus\Desktop\cr-dotnet-week1\src\GummiBearKingdom\Migrations\20170421203224_Initial.Designer.cs
 C:\Users\epicodus\Desktop\cr-dotnet-week1\src\GummiBearKingdom\Migrations\GummiBearKingdomDbContextModelSnapshot.cs
 C:\Users\epicodus\Desktop\cr-dotnet-week1\src\GummiBearKingdom\Models\GummiBearKingdomDbContext.cs
 C:\Users\epicodus\Desktop\cr-dotnet-week1\src\GummiBearKingdom\Models\Product.cs

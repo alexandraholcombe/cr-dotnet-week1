@@ -15,7 +15,7 @@ namespace GummiBearKingdom.Migrations
                 {
                     ProductId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Cost = table.Column<int>(nullable: false),
+                    Cost = table.Column<decimal>(nullable: false),
                     CountryOfOrigin = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true)
                 },
