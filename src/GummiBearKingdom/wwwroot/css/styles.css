@@ -1,46 +1,97 @@
-﻿.header{
-    background-image: url("/images/gummies1.jpg");
-    background-position: center;
-    background-size: cover;
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+        width: 80%;
+}
+
+/*HEADER*/
+
+.layout-header {
+    background-color: #00438f;
+    color: white;
+    text-transform: uppercase;
+    min-height: 100px;
+}
+
+.layout-header h2 {
+    font-weight: 700;
+    font-size: 45px;
+    display: inline-block;
+    margin: 0;
+    margin-top: 10px;
+    position: relative;
+    bottom: -25px;
+}
+
+/*NAVBAR*/
+
+nav.navbar {
+    border-radius: 0;
+    margin: 0;
+    background-color: #00438f;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav.navbar a {
+    color: white;
+}
+
+
+/*HOME PAGE*/
+
+.header{
+    background-image: url("/images/gummycup.jpg");
+    background-position-y: center;
+    background-position-x: right;
+    background-size: 150%;
     height: 500px; 
 }
 
-.pane-1 {
-    background-image: url("/images/candyright.jpg");
-    background-position-x: right;
-    background-position-y: center;
-    background-size: 600px;
-    background-repeat: no-repeat;
-    background-color: #fafbf6;
-    height: 350px;
-}
 
-.pane-2 {
+.pane-2, .pane-1 {
     background-color: #fff;
     height: 350px;
-    border: 2px solid green;
     padding: 0;
 }
 
-.pane-2 div.container {
-    width: 80%;
+.pane-1 div.container, .pane-2 div.container {
     height: 100%;
     padding: 0;
 }
 
-.pane-2 div.col-md-6:first-of-type {
+div.col-md-6 {
     position: relative;
     height: 100%;
 }
 
-.pane-2 div.col-md-6 img {
-    /*height: 100%;*/
+.pane-2 img, .pane-1 img {
     width: auto;
     height: 100%;
     padding: 0;
     margin: 0;
 }
 
+.pane-1 img {
+    float: left;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.pane-2 img {
+    float: right;
+}
+
 .jumbotron {
     margin: 0;
 }
+
+
