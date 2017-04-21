@@ -1,4 +1,30 @@
-﻿@{
-    ViewData["Title"] = "Isabella Bird Blog - People";
+﻿@model GummiBearKingdom.Models.Product
+@{
+    ViewData["Title"] = "GummiBear Kingdom - Edit Product";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<h2>Edit @Html.DisplayFor(model => model.Name)</h2>
+<hr />
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.ProductId)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Country of Origin")
+        @Html.TextBoxFor(model => model.CountryOfOrigin, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Cost)
+        @Html.TextBoxFor(model => model.Cost, new { @class = "form-control", @type = "decimal" })
+    </div>
+
+
+    <input type="submit" value="Save Changes" class="btn btn-primary" />
+}
+<p>@Html.ActionLink("Back to products", "Index")</p>
