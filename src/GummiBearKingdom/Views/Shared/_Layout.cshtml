@@ -3,16 +3,86 @@
 <head>
     <meta charset="utf-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="~/css/styles.css" runat="server"/>
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" runat="server" />
     <title>GummiBear Kingdom</title>
 </head>
 <body>
-    <div class="page-header">
-    <h2>GummiBear Kingdom</h2>
-
+    <div class="content">
+        <div class="layout-header">
+            <div class="container">
+                <div class="center-master">
+                    <img src="~/images/Gummi_Bear-icon.png" />
+                    <h2>@Html.ActionLink("GummiBear Kingdom", "Index", "Home")</h2>
+            </div>
+        </div>
     </div>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Products", "Index", "Products")</li>
+                <li><a href="#">Filler Link</a></li>
+                <li><a href="#">Filler Link</a></li>
+                <li><a href="#">Filler Link</a></li>
+                <li><a href="#">Filler Link</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         @RenderBody()
     </div>
+</div>
+
+
+    <footer>
+        <div class="container">
+            <div class="col-md-3">
+                <span class="footer-heading">Information</span>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Longest Filler Link</a></li>
+                    <li><a href="#">Middle Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Longest Filler Link</a></li>
+                    <li><a href="#">Middle Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Middle Filler Link</a></li>
+                    <li><a href="#">Middle Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <span class="footer-heading">Why Buy From Us</span>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <span class="footer-heading">My Account</span>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <span class="footer-heading">Follow Us</span>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                    <li><a href="#">Filler Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <footer class="sticky-footer">
+        <div class="container">
+            <span>@Html.ActionLink("Admin", "Create", "Products")</span>
+        </div>
+    </footer>
 </body>
 </html>
