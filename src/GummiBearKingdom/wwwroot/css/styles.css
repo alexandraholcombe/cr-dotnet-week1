@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
 }
 
 .container {
@@ -43,7 +44,7 @@ nav.navbar a {
 
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: transparent;
-    color: #f1d500;
+    color: #f1d500; /*YELLOW*/
 }
 
 .nav {
@@ -108,7 +109,7 @@ div.col-md-6 {
 }
 
 .btn-default {
-    background-color: #b5190b;
+    background-color: #b5190b; /*RED*/
     color: white;
     text-transform: uppercase;
     font-weight: 700;
@@ -143,4 +144,39 @@ div.col-md-6 {
     line-height: 48px;
 }
 
+/*FOOTER*/
 
+footer {
+    background-color: #00438f; /*BLUE*/
+    padding-top: 34px;
+    color: white;
+    font-weight: 700;
+}
+
+footer div.container {
+    padding-bottom: 30px;
+}
+
+footer li {
+    margin-bottom: 6px;
+}
+
+footer a {
+    color: white;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+footer a:hover, footer a:focus {
+    color: #f1d500;
+    text-decoration: none;
+}
+
+.footer-heading {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+footer ul {
+    margin-top: 12px;
+}
