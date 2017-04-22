@@ -28,6 +28,7 @@ body {
     color: white;
     text-transform: uppercase;
     min-height: 100px;
+    padding-top: 5px;
 }
 
 .layout-header h2 {
@@ -38,6 +39,7 @@ body {
     margin-top: 10px;
     position: relative;
     bottom: -25px;
+    letter-spacing: 4px;
 }
 
 .layout-header a {
@@ -71,6 +73,17 @@ nav.navbar a {
 
 .nav {
     margin-left: -10px;
+}
+
+/*STICKY HEADER*/
+nav.sticky-header.navbar {
+    background-color: #36669c;
+    height: 40px;
+}
+
+.sticky-header > .container > .navbar-nav {
+    text-transform: none;
+    font-weight: 400;
 }
 
 
@@ -176,7 +189,7 @@ footer {
 }
 
 footer div.container {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 footer li {
