@@ -15,7 +15,7 @@ Webpage built with .NET Core using Entity Framework migrations and SQL Server.  
 
 ### To Build Database
 In command line:  
-    > dotnet ef database update
+    `> dotnet ef database update`
 
 
 ## Technologies Used
